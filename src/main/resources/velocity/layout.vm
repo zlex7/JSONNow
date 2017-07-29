@@ -17,7 +17,7 @@
 		
 		              <a class="tab-link" href="$URLS.getAbout()">What is this?</a>
 		
-		              <a class="tab-link" id="contact-tab" href="https://github.com/zlex7/jsonnow" target="_blank">Github</a>
+		              <a class="tab-link" href="https://github.com/zlex7/jsonnow" target="_blank">Github</a>
 		
 		            </div>
 		           

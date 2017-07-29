@@ -89,7 +89,6 @@ input{
   display: inline-block;
   font-size: 15px;
   color:#e8ebef;
-  float: right;
   font-size: 17px;
   margin-right:15px;
   padding:20px;
@@ -111,17 +110,16 @@ input{
   display: inline-block;
   font-size: 15px;
   color:#e8ebef;
-  float: right;
   font-size: 17px;
-  width: 110px;
   margin-right:15px;
+  padding:20px;
 }
 
 
 #contact-tab{
 
   background-color:#e8ebef;
-  color: rgba(0,0,0,0.75);
+  color: #2d5c9b;
   padding-top:10px;
   padding-bottom:10px;
   border-radius: 10px;
