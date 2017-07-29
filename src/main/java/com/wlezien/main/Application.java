@@ -20,7 +20,8 @@ public class Application
 		System.out.println("running main method");
 
         // Configure Spark
-        port(8000);
+        port(getHerokuAssignedPort());
+        
         staticFiles.location("/static");
         staticFiles.expireTime(600L);
         
@@ -43,5 +44,13 @@ public class Application
 
        // after("*",                   Filters.addGzipHeader);
 
+    }
+	
+	static int getHerokuAssignedPort() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) {
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        }
+        return 8000;
     }
 }

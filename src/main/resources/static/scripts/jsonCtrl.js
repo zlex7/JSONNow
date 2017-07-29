@@ -33,13 +33,14 @@
     		            }
     		           
     				
+    				/*
     				$http.get("http://localhost:8000/api/json",config).then(function(response){
     					
     					console.log("yay get worked");
     					
     				})
     				
-    				/*
+    			
     				$http.post("http://localhost:8000/api/json",$scope.json,config).then(function (data, status, headers, config) {
     					
     					console.log("data: " + data.data.json);
@@ -52,7 +53,7 @@
     	            
     	            $http({
     	            	
-    	            	url: "http://localhost:8000/api/json",
+    	            	url: "http://jsonnow.herokuapp.com/api/json",
     	            	
     	            	method: "POST",
     	            	
