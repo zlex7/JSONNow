@@ -11,17 +11,13 @@
 		
 		            <div id="tab-nav">
 		
-		              <a href="$URLS.getHome()"><div id="logo"></div></a>
+		              <a id="logo" href="$URLS.getHome()"><h1 id="logo-text">JSONNOW</h1></a>
 		
 		              <a class="tab-link active" href="$URLS.getHome()">Home</a>
 		
 		              <a class="tab-link" href="$URLS.getAbout()">What is this?</a>
 		
-		              <a class="tab-link" href="https://github.com/zlex7" target="_blank">TBD</a>
-		
-		              <a class="tab-link" href="resume.html">TBD2</a>
-		
-		              <a class="tab-link" id="contact-tab" href="mailto:a.wlezien@gmail.com" target="_blank">Contact</a>
+		              <a class="tab-link" id="contact-tab" href="https://github.com/zlex7/jsonnow" target="_blank">Github</a>
 		
 		            </div>
 		           
