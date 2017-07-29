@@ -1,0 +1,64 @@
+#parse("/velocity/layout.vm")
+
+<html>
+
+	<head>
+		
+		<title>JSONNow</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+				
+		<script src="/scripts/jsonCtrl.js">	</script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/base.css">
+		<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    	<link href="https://fonts.googleapis.com/css?family=Helvetica+Neue" rel="stylesheet" type="text/css">
+    	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
+		<link rel="icon" href="#">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 
+	</head>
+	
+	<body>
+	
+	#baselayout()
+			
+	<div class = "container-fluid">
+	
+		<div class = "row" id="home-row">
+		
+			<div class="col-sm-2">
+			
+			</div>
+			
+			<div class="col-sm-8 text-center" id="home-main">
+			
+					<h3 id="home-main-title">Format and validate your JSON here!</h3>
+	
+					<div id = "json-form-div" ng-app="app" ng-controller="formCtrl">
+			
+						<form id = "json-form" ng-submit="submit()">
+			
+							<textarea id = "json-input" ng-model="json"> </textarea>
+			
+							<input type="submit" id="submit" value="Submit" />
+			
+						</form>
+			
+						<div id = "json-output" ng-bind-html="jsonoutput"></div>
+			
+					</div>
+				
+			</div>
+			
+			<div class="col-sm-2">
+			
+			</div>
+			
+		</div>
+	</div>
+			
+	</body>
+	
+</html>

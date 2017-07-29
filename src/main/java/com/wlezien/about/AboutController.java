@@ -17,6 +17,6 @@ public class AboutController {
 	        Map<String, Object> model = new HashMap<>();
 	        model.put("1", "2");
 	        model.put("2", "2");
-	        return ViewUtil.render(request, model, Path.Templates.INDEX);
+	        return ViewUtil.render(request, model, Path.Templates.ABOUT);
 	  };
 }

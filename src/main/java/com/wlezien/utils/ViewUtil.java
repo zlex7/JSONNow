@@ -13,7 +13,7 @@ public class ViewUtil {
 	public static String render(Request request, Map<String, Object> model, String templatePath) {
         model.put("msg", "file with strings for application");
         model.put("currentUser", "who the current user is");
-        //model.put("WebPath", Path.Web.class); // Access application URLs from templates
+        model.put("URLS", Path.Urls.class); // Access application URLs from templates
         return strictVelocityEngine().render(new ModelAndView(model, templatePath));
     }
 	
